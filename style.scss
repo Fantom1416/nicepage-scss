@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./fffmin.jpg);
+    background-size: cover;
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        border: 1px solid rgba(128, 128, 128, 0.537);
+        height: 70px;
+        background-color: #fff;
+
+        @media (max-width:500px) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100px;
+        }
+
+        input {
+            margin-left: 50px;
+            height: 35px;
+            width: 170px;
+            text-indent: 20px;
+            border: 1px solid grey;
+
+            @media (max-width:500px) {
+                margin-left: 0%;
+                width: 210px;
+            }
+        }
+
+        i {
+            margin-right: 35px;
+            font-size: 30px;
+
+            @media (max-width:500px) {
+                margin-right: 0px;
+                margin-top: 10px;
+            }
+        }
+
+    }
+
+    .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        
+
+
+
+        .cards{
+            display: flex;
+            align-items: center;
+            // justify-content: center;
+            // border: 2px solid red;
+            margin-top: 70px;
+            @media (max-width:700px) {
+                display: flex;
+                flex-direction: column;
+                
+            }
+
+
+            .card{
+                width: 360px;
+                height: 470px;
+                background-color: #fff;
+                margin: 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 25px;
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+
+                h1{
+                    font-size: 25px;
+                    margin-top: 10px;
+                    color: orange;
+                   
+                }
+                p{
+                    font-size: 18px;
+                    font-family: sans-serif;
+                    color: gray;
+                    margin-top: 5px;
+                }
+                .p1{
+                    margin-top: 10px;
+                }
+            }
+        }
+        h1{
+            font-size: 60px;
+            font-family: sans-serif;
+            @media (max-width:500px) {
+             font-size: 40px;
+            }
+        }
+        p{
+            font-size: 20px;
+        }
+
+
+
+
+    }
+}
